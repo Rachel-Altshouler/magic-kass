@@ -89,7 +89,7 @@ git clone https://github.com/Rachel-Altshouler/magic-kass.git
 
 <div align="center">
 
-נבנה באהבה על ידי **רחל אלטשולר** 💜
+נבנה באהבה 💜
 
 *אם הפרויקט מצא חן בעיניכם, אפשר לתת לו ⭐*
 
