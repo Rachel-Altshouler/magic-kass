@@ -1,0 +1,222 @@
+/* כללי עיצוב */
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    background-color: #ffffff;
+    margin: 0%;
+    padding: 0;
+    overflow-x:hidden ;
+}
+/* עיצוב של הוראות הבטיחות */
+.wage_link{
+  
+    border-radius: 50%;
+    color:#8877f7;
+    font-size: 18px;
+
+}
+#h{
+    height: 50px; 
+  
+    width: 100%;
+  
+    /* top: 0; */
+    left: 0;
+    width: 100%;
+    color: #8877f7;
+    text-align: center;
+    padding: 10px;
+    /* font-weight: bold; */
+    z-index: 1000; /* להבטיח שההודעה תישאר מעל התוכן */
+    /* padding: 0; */
+}
+.container {
+    width: 80%;
+    margin: 0% auto;
+    
+    background-color:#edebfe;
+    /* box-shadow: 0 4px 8px  #ffffff; */
+}
+/* עיצוב של אייקון אוכל */
+.safety-rules li i.fa-utensils {
+    color: #8877f7;
+}
+nav {
+    text-align: center;
+    /* background-color: #ffffff; */
+    color:  #8877f7;
+    padding: 0px;
+    
+}
+
+h1 {
+    /* margin-right: 25%; */
+    font-size: 2.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color:#8877f7;
+    /* המרחק מלמעלה */
+    margin: 0.1%;
+    /* width: 50%; */
+    text-align: center;
+    margin-bottom:3%;
+}
+
+h4 {
+    color: 0 4px 8px  #8877f7;
+    font-size: 1.8rem;
+ 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.safety-rules ul {
+    list-style-type: none;
+    padding-top :150px;
+    padding-right :53px;
+}
+
+.safety-rules li {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+    margin-right: 6px;
+     margin-left: 60px;
+}
+
+/* footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #ffffff;
+} */
+
+/* עיצוב של תיבות חירום */
+.emergency {
+    background-color: 0 4px 8px #8877f7;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+footer p {
+    font-weight: bold;
+}
+/* עיצוב של הוראות הבטיחות */
+.faq-section {
+    max-width: 1091px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    margin: 15px 0;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 10px;
+}
+
+.faq-question {
+    font-size: 18px;
+    font-weight: bold;
+    color:#8877f7;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.faq-question:hover {
+    color:#8877f7;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.faq-answer {
+    display: none; /* ברירת מחדל: התשובה מוסתרת */
+    margin-top: 10px;
+    font-size: 16px;
+    color: #8877f7;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+/* שימוש ב-checkboxes כדי לשלוט בפתיחת התשובה */
+input[type="checkbox"] {
+    display: none; /* הסתרת תיבת הבחירה */
+}
+
+/* כאשר תיבת הבחירה מסומנת, התשובה תופיע */
+input[type="checkbox"]:checked + .faq-answer {
+    display: block;
+}
+li{
+    
+    background: hsl(0, 0%, 100%);
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 16px;
+  color: #6d7278;
+  margin-bottom: 12px;
+  position: relative;
+  box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+  display: flex;
+  align-items: center;
+}
+
+.safety-rules{
+    position: relative;
+    z-index: 9;
+    background-color: #edebfe;
+    padding: 80px 0;
+}  
+.galery
+{
+    /* -המרחק של המסגרת מה header */
+      margin: 5%;
+}
+#waze{
+   
+    margin: 5%;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 16%;
+
+}
+@media only screen and (max-width: 768px){
+    #waze{
+        width: 80%;
+        margin: 5%;
+        margin-top: 2%;
+        margin-right: 12%;
+        margin-bottom: 5%;
+        margin-left: 5%;
+    
+    } 
+}
+@media only screen and (max-width: 768px){
+    #h1
+       {
+            align-items: center;
+          justify-content:center;
+          margin-right: 5%;
+          margin-right: 0%;
+       }
+    
+   
+}
+.container
+{
+    width: 80%;
+    margin: 0% auto;
+    background-color: #edebfe;
+    /* box-shadow: 0 4px 8px #ffffff; */
+}
+@media(max-width:900px)
+{
+    h1
+    {
+         text-align: right;
+         font-size: 30px;
+    }
+
+}

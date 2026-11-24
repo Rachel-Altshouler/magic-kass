@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/order.css">
+    <link rel="stylesheet" href="../all.css">
+    <link rel="stylesheet" href="../css/footer.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>  
+        <div  dir="rtl" class="hamburger"  >
+            <div></div>
+            <div></div>
+            <div></div>
+            </div>        
+        <img class="logo" src="../images/glogo.png">
+        <img class="vidio">
+  
+        <nav id="menu">
+            <a href="../home.html" class="menubuttona"><div id="a">דף הבית</div></a>
+            <a href="../pages/sacility.html"class="menubuttonb"><div id="b">מתקני הפארק</div> </a>
+            <a href="../pages/question.html"class="menubuttonc"><div id="c">שאלות נפוצות</div></a>
+            <a href="order.html"class="menubuttond"><div id="d">רכישת כרטיסים</div></a>
+        </nav>
+     </header>
+
+     <main>
+        <aside></aside>
+        <span>
+           <h1 id="title" >רכישת כרטיסים</h1>
+        
+            
+            <div class="form-container">
+                <div class="form-group">
+                  <label for="name" >הכנס שם</label >
+                 <input type="text" id="name" required><br><br>
+                 <label for="id">מספר זהות</label>
+                 <input type="text" id="id" required minlength="9" maxlength="9" placeholder="הקש מ.ז בן 9 ספרות">
+                    <br>     
+                  <label for="t">הקש קוד כניסה</label>
+                 <input type="password" id="pas"><br><br>
+                  <label for="date">תאריך הגעה</label>
+                  <input type="date" id="date"><br><br>
+                  <label for="name">משתתפים</label>
+                  <input type="number" min="1" max="70">
+                  <br>
+                 <label for="email">דוא"ל:</label>
+                  <input type="email" required /><br><br>
+        
+                  <div class="section">
+
+                  <label for="terms">קראתי את התנאים ואני מאשר אותם</label><br>
+                  <input type="checkbox" id="terms" required><br><br>
+
+                 <!-- <input type="submit" value="שמור" id="submit-button"><br><br> -->
+                 <button><a id="sending" href="save.html">שמור</a></button>
+                 <button><a id="sending" href="comment.html">למעבר לעמוד התגובות לחץ כאן</a></button>
+                
+           
+
+                    <div dear="rtl" class="payment-methods">
+                             <p class="payment-title">תשלום באמצעות:</p>
+                       <input type="radio" id="visa" name="payment-method" value="visa">
+                       <label for="visa">ויזה</label><br>
+
+                        <input type="radio" id="mastercard" name="payment-method" value="mastercard">
+                        <label for="mastercard">אשראי</label><br>
+
+                       <input type="radio" id="isracard" name="payment-method" value="isracard">
+                       <label for="isracard">ישראכרט</label><br><br>
+                    </div>
+                </div>
+            </div>     
+        </div>
+    
+    </span>
+    <aside></aside>
+    </main>
+   
+        <footer class="foot">
+            <h3 id="f"> עקבו אחרינו </h3>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram fa-2x"></i></a>      
+            <a href="https://twitter.com/"><i class="fab fa-twitter fa-2x"></i></a>       
+            <a href="https://www.youtube.com/"><i class="fab fa-youtube fa-2x"></i></a>       
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook fa-2x"></i></a>
+            
+       </footer>
+
+</body>
+</html>

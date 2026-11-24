@@ -1,0 +1,37 @@
+
+
+div
+{
+    background-color: lightcoral;
+    height: 500px;
+}
+#f
+{
+    border: 5px pink solid;
+    box-sizing:border-box ;
+}
+#s
+{
+    border: 5px green solid;
+    box-sizing:border-box ;
+}
+#th
+{
+    border: 5px pink solid;
+    box-sizing:border-box ;
+}
+#fo
+{
+    background-color: lightskyblue;
+    box-sizing:border-box ;
+}
+#fi
+{
+    background-color: lightgreen;
+    box-sizing:border-box ;
+}
+#all
+{
+    background-color: crimson;
+    box-sizing:border-box ;
+}

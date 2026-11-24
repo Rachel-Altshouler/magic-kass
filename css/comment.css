@@ -1,0 +1,46 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    overflow-x:hidden ;
+}
+.game{
+    /* border-radius: 30px; */
+    text-align:center ;
+    justify-content: center;
+    /* margin-bottom: 40px; */
+ margin-top: 20px;
+ margin-left: 100px;
+
+ margin: 5%;
+ animation-name: examp;
+ animation-duration: 2s;
+ animation-duration: alternate;
+ animation-timing-function: ease-out;
+ background-color:#fe4a6c;
+ color: #fe4a6c;
+}
+@keyframes examp
+{
+  from{background-color: #fffcfe;}
+  to{background-color:#fe4a6c ;}
+}
+.row{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#titl{
+    text-align: center;
+
+    color: #fe4a6c;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+   margin-top: 150px;
+}
+#i1
+{
+ color:#fbf9fa;
+   border: 3px #fe4a6c solid;
+   border-radius: 10px;
+   justify-content: center;
+   text-align: center;
+}

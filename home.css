@@ -1,0 +1,171 @@
+
+
+.video-section
+{
+    /* position: relative; */
+    width: 100%;
+    height: 110vh; /* גובה של כל חלון הדפדפן */
+    /* מה שבא אחרי הקליפ יעמוד אחריו ולא עליו */
+    overflow:hidden;
+}
+section{
+  width: 100%;
+}
+.video 
+{
+  
+    /* position: absolute; */
+    /* top: 200px; */
+    /* left: 0; */
+    width: 100%;
+   
+    object-fit: cover; /* ימלא את המסך מבלי להוציא את הוידאו מהמגבלות */
+    /* object-fit: cover; מבטיח שהוידאו יתאים בגודל המסך מבלי distort */
+}
+
+/* .title_b{
+  display: none;
+} */
+/* body
+{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 1px;
+  flex-wrap: wrap;
+} */
+div{
+display: block;
+/* unicode-bidi: isolate; */
+}
+#titlebranches
+{
+color: azure;
+border: none;
+background-color: none;
+font-size: 4.4em;
+text-align: center;
+padding-bottom: 0;
+}
+h1{
+display: block;
+margin-block-start: 0.67em;
+margin-block-end: 0.67em;
+margin-inline-start: 0ex;
+margin-inline-end: 0ex;
+font-weight: bold;
+unicode-bidi: isolate;
+}
+
+a {
+text-decoration: none;
+}
+
+.flip-box {
+width: 29.5vw;
+height: 20vw;
+flex-basis: 25vw;
+border: 4px solid #e6e6dc;
+perspective: 1000px; /* יצירת אפקט תלת ממדי */
+margin: 10px;
+}
+
+.flip-box-inner {
+position: relative;
+width: 100%;
+height: 100%;
+transition: transform 1s; /* זמן האנימציה */
+transform-style: preserve-3d;
+font-size: 4vw;
+}
+
+/* כאשר יש Hover על ה- flip-box, תתרחש ההפיכה */
+.flip-box:hover .flip-box-inner {
+transform: rotateY(180deg); /* סיבוב 180 מעלות */
+}
+
+/* הגדרה של החלקים הפנימיים (קדמי ואחורי) */
+.flip-box-front,
+.flip-box-back {
+  /* absolute-שהתמונה תתחלף בתוך הבוקס */
+position: absolute;
+width: 100%;
+height: 100%;
+backface-visibility: hidden; /* מניעת הצגת הצד האחורי בזמן הסיבוב */
+}
+
+/* עיצוב החלק הקדמי */
+.flip-box-front {
+background-color:  #8877f7;
+color: #e6e6dc;
+display: flex;
+justify-content: center;
+align-items: center;
+/* ניתן להוסיף סגנון נוסף לתמונה אם יש צורך */
+}
+
+.flip-box-back {
+background-color: #8877f7;
+color: #5A6E5F;
+transform: rotateY(180deg); /* מיקום האחורי בפס רחב ב-180 מעלות */
+display: flex;
+justify-content: center;
+align-items: center;
+}
+/* יש גם קלאס וגם id */
+.branchesimg {
+width: 100%;
+height: 100%;
+object-fit: cover; /* התמונה מתממשקת לגודל הקופסה */
+}
+p{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-style: normal;
+font-size: large;
+/* font-weight: 200px; */
+}
+#branchesimg{
+display:flex;
+flex-direction: row;
+justify-content: space-between; 
+padding-right: 3vw;
+padding-left: 3vw;
+padding-bottom: 2vw;
+
+}
+@media (max-width: 900px){
+
+  .video-section
+   {
+    /* height: 1000px; */
+    margin-top: 80px;
+    height: 20%;
+  }
+}
+@media (max-width: 900px){
+
+#branchesimg
+ {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   /* justify-content: center;
+   text-align: center; */
+   align-items: center; 
+   background-color: #8877f7;
+}
+}
+@media (max-width: 900px){ 
+
+.flip-box
+ {
+ padding-bottom: 0vh;
+}
+}
+@media (max-width: 900px){
+
+.flip-box-back
+  {
+  background-color: azure;
+ }
+}

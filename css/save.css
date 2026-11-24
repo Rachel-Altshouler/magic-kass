@@ -1,0 +1,134 @@
+ /* עיצוב כללי */
+ body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    /* גבולות העמוד */
+    margin: 0;
+    /* מרווח בין האלמנטים */
+    padding: 0;
+    display: flex;
+    /*-x-ממקם את האלמנט באמצע המסך ולא בצד בציר ה*/
+    justify-content:center;
+    /* y ממקם את האלמנט-באמצע של של הגובה לעומת ציר ה */
+    align-items: center;
+    height: 100vh;
+    direction: rtl;
+    overflow: hidden;
+}
+
+/* עיצוב ה-container */
+.success-container {
+    text-align: center;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 12px;
+    /* צל*/
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    width: 600px;
+    box-sizing: border-box;
+    /*  הזמן וההופעה של האפקט בצורה חלקה מתחיל במהירות רגילה ומאט בסוף*/
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* אנימציה להופעת המסך */
+/* בהתחלה הוא שקוף ובסוף נראה כגלוי לגמרי */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* כותרת */
+h1 {
+    font-size: 36px;
+    color: #fe4a6c;
+    margin-bottom: 20px;
+    font-family: 'Gill Sans', sans-serif;
+    background: linear-gradient(90deg, #fe4a6c, #ffa500, #fbd302);
+    /* הרקע של האותיות */
+    background-clip: text;
+    color: transparent;
+}
+
+/* טקסט */
+p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* אנימציה לרשימת תיאורים */
+.checkmark-container {
+    /* האלמנט ליד אלמנטים אחרים */
+    display: inline-block;
+    /* יוצר אפקט קפיצה על האלמנטים  */
+    animation: bounce 1.5s infinite;
+    transition: transform 0.3s ease-in-out;
+
+}
+.checkmark-container:hover
+{
+    transform: scale(1.2);
+}
+/* אנימציה של תו V (סימן הצלחה) -היד- */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* עיצוב כפתור חזרה לדף הבית */
+.button {
+    background-color: #fe4a6c;
+    color: white;
+    font-size: 18px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #f25170;
+}
+
+/* אייקונים */
+.success-icon {
+    font-size: 50px;
+    color: #fe4a6c;
+    margin-bottom: 20px;
+}
+
+footer {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+    color:#fe4a6c;
+}
+
+footer a {
+    color: #fe4a6c;
+    font-size: 20px;
+    /* transition: transform 0.3s ease-in-out; */
+    font-weight: bold;
+    
+}
+
+footer a:hover {
+    color: #f25170;
+  
+ 
+}

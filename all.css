@@ -1,0 +1,279 @@
+
+ .hamburger {
+  display: inline-block;
+  width: 0px;
+  height: 25px;
+  position: relative;
+  cursor: pointer;
+}
+
+.hamburger div {
+  
+  display: none;
+  width: 35px;
+  height: 5px;
+  background-color:#2af6f6;
+  margin: 5px 0;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.hamburger:hover div {
+  background-color:#000000;
+}
+@media (max-width: 1200px){
+  .hamburger {
+    display: inline-block;
+    width: 0px;
+    height: 25px;
+    position: relative;
+    cursor: pointer;
+    
+  }
+  
+  .hamburger div {
+   
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color:#2af6f6;
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+ }
+ header{
+  height: 10%;
+ display: flex;
+margin-top: 0%;
+}   
+.title_a{
+  margin-top: 5%;
+  width: 75%;
+  font-size: 350%;
+  text-align: center;
+  align-items: center;
+  justify-content:center;
+  
+}
+.title_b{
+  display: none;
+}
+
+  .logo {
+   
+    margin-top: 0px;
+    position: absolute; /* ממקם את הלוגו באופן מוחלט */
+    /* ממקם את הלוגו במרכז האופקי */
+    /* transform: translateX(-50%); דואג שהלוגו יישאר בדיוק במרכז */
+    height:167px; /* גובה הלוגו */
+    width: 157px; /* רוחב הלוגו */
+    /* box-sizing: border-box; */
+
+    align-items: center;
+    /* ממקם את הלוגו בחלק העליון של הדף */
+   
+  }
+ 
+  .menu{
+  display: flex;
+  justify-content:flex-start;
+  top:28%;
+  /* transform: translateX(-50%);
+  left: 50%; */
+}
+.menubuttona{
+ 
+
+  width: 25%;
+  height: 10%;
+  text-align: center;
+  align-items: center;
+  justify-content:center;
+  color:white;
+  background-color: #2af6f6;
+  font-size: 200%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ border: white;
+  text-decoration: none;
+  
+}
+
+
+  
+  .menubuttonb{
+    width: 25%;
+    justify-content:center;
+    height: 10%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #fbd302;
+    font-size: 200%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    text-decoration: none;
+  }
+  .menubuttonc{
+    width: 25%;
+    justify-content:center;
+    height: 10%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 200%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #8877f7;
+    text-decoration: none;
+  }
+  .menubuttond{
+   width: 25%;
+    justify-content:center;
+    height: 10%;
+    text-align: center;
+    align-items: center;
+    color: white;
+    background-color: #fe4a6c;
+    font-size: 200%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: flex;
+    text-decoration: none;
+    flex-direction:row ;
+  }
+
+
+body
+{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 1px;
+}
+header{
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  direction: rtl;
+  position: sticky;
+  top: 0%;
+  z-index: 99999999999;
+  height: 100px;
+  box-sizing: border-box;
+  unicode-bidi: isolate;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+
+}
+#menu{
+display: flex;
+flex-direction: row;
+width: 100%;
+align-content:end;
+margin-top: 134px;
+}
+
+@media screen and (max-width: 900px) {
+
+  #res {
+      display: none;
+      transition: transform 0.01s ease;
+  }
+
+  #contactus {
+      padding-right: 2vw;
+  }
+
+  #branchesimg {
+      display: block;
+      padding-right: 5vw;
+      padding-left: 5vw;
+      padding-bottom: 2vw;
+
+  }
+
+  .branchesimg {
+      width: 54vw;
+      height: 31.5vh;
+  }
+
+  .flip-box {
+      width: 54vw;
+      height: 40vw;
+      flex-basis: 23vw;
+      padding-bottom: 2vw;
+      margin-bottom: 2vw;
+      margin-left: 17.5vw;
+      margin-right: 17.5vw;
+  }
+
+  #contactusimg {
+      margin-right: 6vw;
+      width: 65vw;
+      height: 60vw;
+  }
+
+  #titleabout {
+      padding: 1vw;
+      width: 50vw;
+      font-size: 1.3em;
+  }
+
+  #about {
+      font-size: 1.3em;
+  }
+
+  .flip-box-inner {
+      height: 10.5em;
+
+  }
+
+}
+@media (max-width: 990px){
+  #a{
+      font-size: 13px;
+     
+  }
+}
+@media (max-width: 990px){
+  #b{
+      font-size: 13px;
+  }
+}
+@media (max-width: 990px){
+  #c{
+      font-size: 13px;
+  }
+}
+@media (max-width: 990px){
+  #d{
+      font-size: 13px;
+      align-items: center;
+  }
+}
+@media (max-width: 990px){
+  #menu{
+    margin-top: 100px;
+   
+  }
+}
+@media (max-width: 990px){
+  header{
+   
+    height:90px ;
+  }
+}
+@media (max-width: 900px){
+ 
+  .logo
+    {
+      height:150px; /* גובה הלוגו */
+      width: 145px; /* רוחב הלוגו */
+   }
+ }
+
